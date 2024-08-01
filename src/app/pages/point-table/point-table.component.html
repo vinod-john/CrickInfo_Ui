@@ -1,0 +1,28 @@
+<div class="table-container rounded-md">
+  <table
+    class="text-center table-cell rounded-full shadow-lg min-w-full divide-y divide-gray-200"
+  >
+    <thead class="bg-gray-50">
+      <tr>
+        @for (heading of tableHeading; track $index) {
+        <th
+          class="table-header px-6 py-3 text-xs font-medium uppercase tracking-wider"
+        >
+          {{ heading }}
+        </th>
+        }
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+      @for (team of pointTable; track $index) {
+
+      <tr class="table-row hover:table-row">
+        @if ($index>0) { @for (data of team; track $index) {
+
+        <td class="table-cell text-green">{{ data }}</td>
+        } }
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,30 @@
+/* Ensure table and its container adapt well to different screen sizes */
+.table-container {
+  overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
+}
+
+/* Hover effect for rows */
+.table-row:hover {
+  background-color: #f3f4f6; /* Light gray background on hover */
+  transform: scale(1.02); /* Slight zoom effect */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Style for header cells */
+.table-header {
+  background-color: #f9fafb; /* Very light gray */
+  text-align: left;
+  color: #6b7280; /* Gray color for text */
+  font-weight: 600; /* Bold text */
+}
+
+/* Style for regular cells */
+.table-cell {
+  padding: 16px; /* Adequate padding for readability */
+  border-bottom: 1px solid #e5e7eb; /* Border between rows */
+}
+
+/* Color for first column */
+.text-green {
+  color: #10b981; /* Green color for the first column text */
+}

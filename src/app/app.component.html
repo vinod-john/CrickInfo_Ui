@@ -1,0 +1,35 @@
+<header class="bg-blue-900 text-white py-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-2xl font-bold">CrickInform</div>
+    <nav class="space-x-4">
+      <a
+        [routerLink]="'/home'"
+        href="#"
+        class="text-white hover:text-gray-300 hover:size-3 transition duration-300 ease-in-out"
+        >Home</a
+      >
+      <a
+        [routerLink]="'/live'"
+        href="#"
+        class="text-white hover:text-gray-300 hover:size-3 transition duration-300 ease-in-out"
+        >Live</a
+      >
+      <a
+        [routerLink]="'/history'"
+        href="#"
+        class="text-white hover:text-gray-300 hover:size-3 transition duration-300 ease-in-out"
+        >History</a
+      >
+      <a
+        [routerLink]="'/point-table'"
+        href="#"
+        class="text-white hover:text-gray-300 size-3 transition duration-300 ease-in-out"
+        >Point Table</a
+      >
+    </nav>
+    <div class=""></div>
+  </div>
+</header>
+<div class="px-28 py-8">
+  <router-outlet> </router-outlet>
+</div>
